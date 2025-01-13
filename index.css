@@ -1,0 +1,351 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    /* background-color: brown; */
+    width: 100%;
+}
+
+body {
+    /* width: 1400px; */
+    height: 1080px;
+    background-color: #373737;
+    margin: auto;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    height: 8%;
+    /* background-color: yellow; */
+
+    .logo {
+        display: inline-block;
+        background-image: url(재료/로고.svg);
+        width: 80px;
+        height: 20px;
+        scale: 300%;
+        background-repeat: no-repeat;
+        /* background-color: red; */
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+
+    a:hover {
+        background-color: #575b5e;
+    }
+}
+
+.header_nav {
+    display: flex;
+    column-gap: 60px;
+    list-style-type: none;
+}
+
+.header_inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-left: calc((100% - 90%)/2);
+    padding-right: calc((100% - 90%)/2);
+    width: 1280px;
+    margin: auto;
+    /* background-color: blue; */
+}
+
+.banner {
+    height: 600px;
+    width: 1400px;
+    background-color: green;
+    display: flex;
+    margin: auto;
+
+    iframe {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.main_list1 {
+    display: flex;
+    width: 1400px;
+    margin: 0;
+    column-gap: 20px;
+    height: 230px;
+    /* background-color: orange; */
+    padding: 38px 0 38px 0;
+    margin: auto;
+
+    li {
+        /* background-color: yellowgreen; */
+        display: block;
+        flex-direction: column;
+        width: 440px;
+        height: 230px;
+        margin: auto;
+    }
+
+    .box1 {
+        height: 230px;
+        width: 440px;
+        border-radius: 30px;
+        background-color: #aa4f4f;
+        line-height: 20.8px;
+        padding: 38px 50px 38px 50px;
+        box-sizing: border-box;
+        margin: 0 0 0 0;
+    }
+
+    .box2 {
+        height: 230px;
+        width: 440px;
+        border-radius: 30px;
+        background-color: #4fab69;
+        padding: 38px 50px 38px 50px;
+        box-sizing: border-box;
+    }
+
+    .box3 {
+        height: 230px;
+        width: 440px;
+        border-radius: 30px;
+        background-color: #4f57ab;
+        padding: 38px 50px 38px 50px;
+        box-sizing: border-box;
+        margin: 0 0 0 0;
+    }
+
+    button {
+        background-image: url(재료/icon3.png);
+        width: 70px;
+        height: 70px;
+        display: block;
+        margin: 80px 0 0 280px;
+        background-color: transparent;
+        background-size: cover;
+        border: none;
+        cursor: pointer;
+    }
+}
+
+.main_list2 {
+    height: 470px;
+    width: 1400px;
+    margin: auto;
+    box-sizing: border-box;
+    display: flex;
+    column-gap: 40px;
+
+    .section1 {
+        width: 800px;
+        height: 470px;
+        border: 1px solid #DDDDDD;
+        padding: 24px 30px 24px 30px;
+        display: block;
+        border-radius: 30px;
+        box-sizing: border-box;
+    }
+
+    .title1 {
+        line-height: 20.8px;
+        /* background-color: #FFFFFF;/ */
+        height: 69px;
+        width: 800px;
+        border-bottom: 1px solid #DDDDDD;
+        padding: 0 30px 20px 30px;
+        margin: 0 0 0 -30px;
+        box-sizing: border-box;
+        display: flex;
+
+        h3 {
+            padding: 10px 0 0 0;
+            height: 48px;
+            width: 100px;
+            color: white;
+        }
+    }
+
+    input {
+        width: 500px;
+    }
+
+}
+
+
+.content {
+    display: block;
+    height: 200px;
+    width: 738px;
+    list-style-position: outside;
+    padding: 20px 20px 20px 20px;
+
+    .search_rank {
+        height: 43px;
+        width: 360px;
+        display: flex;
+        box-sizing: border-box;
+
+        .text {
+            box-sizing: border-box;
+            padding-left: 20px;
+            /* margin-left: 20px; */
+            /* background-color: red; */
+        }
+
+        .search-img{
+            position: relative;
+            margin: 0 20px 0 0;
+            left: -40px;
+            top: 7px;
+        }
+    }
+
+    .list {
+        padding: 20px 0 0 0;
+        box-sizing: border-box;
+
+        h2 {
+            height: 19px;
+            width: 200px;
+            box-sizing: border-box;
+            font-size: 20px;
+            color: white;
+        }
+
+        .rank {
+            padding: 10px 0 0 0;
+            
+            .count{
+                padding: 0 10px 0 0;
+                font-size: 15px;
+                font-weight: 700;
+            }
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+    }
+
+}
+
+img {
+    height: 30px;
+    width: 30px;
+}
+
+.rank {
+    height: 40px;
+    width: 360px;
+    list-style-type: none;
+
+    .count {
+        font-size: 16px;
+        font-weight: 300;
+    }
+}
+
+.section2 {
+    height: 470px;
+    width: 560px;
+    border: 1px solid #DDDDDD;
+    padding: 24px 30px 24px 30px;
+    display: block;
+    border-radius: 40px;
+    box-sizing: border-box;
+
+
+    .title2 {
+        height: 69px;
+        width: 560px;
+        box-sizing: border-box;
+        border-bottom: 1px solid #DDDDDD;
+        padding: 0 30px 20px 30px;
+        margin: 0 0 0 -30px;
+        box-sizing: border-box;
+        display: flex;
+
+        h3 {
+            padding: 10px 0 0 0;
+            height: 48px;
+            width: 100px;
+            color: white;
+        }
+
+        button{
+            background-image: url(재료/icon3.png);
+            width: 40px;
+            height: 40px;
+            background-size: cover;
+            background-color: transparent;
+            border: none;
+            margin: 0 0 0 350px;
+            cursor: pointer;
+        }
+    }
+
+    .consult{
+        margin: 15px 0 0 0;
+
+        .local{
+            padding: 0 0 10px 0;
+
+            a{
+                color: white;
+                text-decoration: none;
+            }
+
+            a:hover {
+                color: blue;
+            }
+        }
+    }
+}
+
+
+footer {
+    background-color: #4F57AB;
+    padding: 30px;
+    color: white;
+    display: block;
+    /* margin: 40px 0 0 0; */
+    width: 100vw;
+    /* background-color: yellow; */
+
+    .footer_inner{
+        width: 1400px;
+        margin: auto;
+    }
+
+    .first {
+        display: flex;
+        width: 1280px;
+        margin: auto;
+        justify-content: space-between;
+        align-items: center;
+        /* background-color: red; */
+        padding: 23px 0 23px 0;
+        margin: 0;
+    }
+
+    address {
+        font-style: normal;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+
+    .copy {
+        padding: 20px 0 0 0;
+    }
+}
