@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+        }
+
+        .container{
+            height: 100vh;
+            display: grid;
+            text-align: center;
+            font-weight: 500;
+            grid-template-rows: 80px 100px 1fr 60px;
+            grid-template-columns: 1fr 3fr;
+            grid-template-areas: 
+            "H H"
+            "L B"
+            "L M"
+            "F F";
+        }
+
+        .Header{
+            background-color: pink;
+            grid-area: H;
+        }
+
+        .Banner{
+            background-color: yellow;
+            grid-area: B;
+        }
+
+        .Main_Content{
+            background-color: yellowgreen;
+            grid-area: M;
+        }
+
+        .Left_Aside{
+            background-color: orange;
+            grid-area: L;
+        }
+
+        .Footer{
+            background-color: skyblue;
+            grid-area: F;
+        }
+
+        @media screen and (max-width: 768px) {
+            .container{
+                grid-template-rows: 50px 100px 1fr 100px 50px;
+                grid-template-columns: 1fr;
+                grid-template-areas: 
+                "H H"
+                "B B"
+                "M M"
+                "L L"
+                "F F";
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="Header">Header</div>
+        <div class="Banner">Banner</div>
+        <div class="Main_Content">Main Content</div>
+        <div class="Left_Aside">Left Aside</div>
+        <div class="Footer">Footer</div>
+    </div>
+</body>
+</html>
